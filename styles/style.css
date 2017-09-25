@@ -1,4 +1,16 @@
+body, html {
+    height: 100%;
+}
+
 #header {
     background: #02abff;
     height: 50px;
+}
+.para1 {
+    background-image: url('images/bg.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
