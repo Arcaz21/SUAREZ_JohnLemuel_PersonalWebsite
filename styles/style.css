@@ -7,7 +7,15 @@ body, html {
     height: 50px;
 }
 .para1 {
-    background-image: url('images/bg.jpg');
+    background-image: url('images/para1.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.para2 {
+    background-image: url('images/para2.jpg');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -29,4 +37,11 @@ span a {
     display: inline-block;
     margin:0 auto;
     padding: 50px 70px;
+}
+
+.content{
+    text-align: center;
+    height:1000px;
+    background-color:#a6e1ff;
+    font-size:36px;
 }
