@@ -19,16 +19,12 @@
 9...
 -->
 
-<body>
+<body onscroll="MyFunction">
     <!-- MyNavBar -->
-    <div id='cssmenu'>
-        <ul>
-            <li class='active'><a href='#'>Home</a></li>
-            <li><a href='#'>About Me</a></li>
-            <li><a href='#'>Photography</a></li>
-            <li><a href='#'>Computer</a></li>
-            <li><a href='#'>Contact</a></li>
-        </ul>
+    <div id="mySidenav" class="sidenav">
+            <a href="#" id="about-nav">About Me</a>
+            <a href="#" id="photo">Projects</a>
+            <a href="#" id="contact">Contact</a>
     </div>
     <!--Paralax 1-->
     <div class="para1">
@@ -37,11 +33,11 @@
         </div>
     </div>
     <!-- About me -->
-    <div class="content">
+    <div id="about" class="content">
         <img class="prof" src="styles/images/prof.jpg"> 
         <div id="Student" class="tab-content">
             <h3>Student</h3>
-            <p>B.S. Computer Sceince</p>
+            <em>B.S. Computer Sceince</em>
         </div>
 
         <div id="Photography" class="tab-content">
@@ -90,7 +86,18 @@
     <div>
         <p>Footer</p>
     </div>
-
+    <script>
+            var navbar = document.getElementById("mySidenav");
+            var sticky = navbar.offsetTop;
+            
+            function MyFunction() {
+              if (window.scrollY >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+    </script>
 </body>
 
 </html>
