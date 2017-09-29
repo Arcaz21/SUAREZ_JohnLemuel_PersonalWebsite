@@ -1,34 +1,31 @@
 body, html {
     height: 100%;
+    opacity: 1;
+    transition: 1s opacity;
 }
-
 #header {
     background: #02abff;
     height: 50px;
 }
-.para1 {
-    background-image: url('images/para1.jpg');
-    height: 100%;
+.para1,para2,para3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.para1 {
+    background-image: url('images/para1.jpg');
+    min-height: 100%;
+    animation:opac .5s;
 }
 .para2 {
     background-image: url('images/para2.jpg');
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100%;
 }
-
 .center {
     padding: 300px 0;
     text-align: center;
 }
-
-
 span a {
     
     background-color: grey;
@@ -38,10 +35,69 @@ span a {
     margin:0 auto;
     padding: 50px 70px;
 }
-
 .content{
     text-align: center;
     height:1000px;
     background-color:#a6e1ff;
     font-size:36px;
+}
+.top-logo{
+    position:absolute;
+    top:50%;left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+    padding:12px 24px;
+    animation:opac 3s;
+    
+}
+
+/* Positioning */
+.topleft{
+    position:absolute;
+    left:0;
+    top:0
+}
+.topright{
+    position:absolute;
+    right:0;
+    top:0
+}
+.bottomleft{
+    position:absolute;
+    left:0;
+    bottom:0
+}
+.bottomright{
+    position:absolute;
+    right:0;
+    bottom:0
+}
+.middle{
+    position:absolute;
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+.left{
+    position:absolute;
+    top:50%;left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+}
+.right{
+    position:absolute;
+    top:50%;right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%)
+}
+.topmiddle{
+    position:absolute;
+    left:50%;top:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%)
+}
+.bottommiddle{
+    position:absolute;
+    left:50%;bottom:0;transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%)
 }
