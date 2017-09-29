@@ -3,6 +3,18 @@ body, html {
     opacity: 1;
     transition: 1s opacity;
 }
+.prof{
+    box-shadow: 10px 10px 5px #888888;
+    position: relative;
+    margin-top: 10px;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(150, 150, 150, 0.50);
+}
+div{
+   font-family: Lato; 
+}
 #header {
     background: #02abff;
     height: 50px;
