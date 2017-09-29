@@ -15,17 +15,14 @@ body, html {
 }
 .para1 {
     background-image: url('images/para1.jpg');
-    min-height: 100%;
+    min-height: 80%;
     animation:opac .5s;
 }
 .para2 {
     background-image: url('images/para2.jpg');
     min-height: 100%;
 }
-.center {
-    padding: 300px 0;
-    text-align: center;
-}
+
 span a {
     
     background-color: grey;
@@ -35,12 +32,7 @@ span a {
     margin:0 auto;
     padding: 50px 70px;
 }
-.content{
-    text-align: center;
-    height:1000px;
-    background-color:#a6e1ff;
-    font-size:36px;
-}
+
 .top-logo{
     position:absolute;
     top:50%;left:0%;
@@ -49,6 +41,45 @@ span a {
     padding:12px 24px;
     animation:opac 3s;
     
+}
+
+/*Content Styles */
+.content{
+    max-width:980px;
+    margin:auto;
+    text-align: center;
+}
+.padding-content{
+    padding-top:64px;
+    padding-bottom:64px;
+}
+.container{
+    padding:0.01em 16px;
+}
+.center {
+    text-align: center;
+}
+
+/*Tabs*/
+.tab-content{
+    color: #000000;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+.tab-link{
+    background-color: #8BB0C3;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tab-link:hover {
+    background-color: #777;
 }
 
 /* Positioning */
@@ -60,7 +91,8 @@ span a {
 .topright{
     position:absolute;
     right:0;
-    top:0
+    top:0;
+    background-color: #02abff
 }
 .bottomleft{
     position:absolute;
