@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 
 <head>
     <title>Arcaz21 - About Me</title>
@@ -19,40 +19,52 @@
 9...
 -->
 
-<body onscroll="MyFunction">
-    <!-- MyNavBar -->
-    <div id="mySidenav" class="sidenav">
-            <a href="#" id="about-nav">About Me</a>
-            <a href="#" id="photo">Projects</a>
-            <a href="#" id="contact">Contact</a>
+<body onscroll="myFunction()">
+<!-- MyNavBar -->
+    <div id="navbar">
+        <div id="navbar1">
+                <a href="#about" id="about-nav">About Me</a>
+        </div>
+        <div id="navbar2">
+                <a href="#photo" id="photo-nav">Portfolio</a>
+        </div>
+        <div id="navbar3">
+                <a href="#contact" id="contact-nav">Contact</a>
+        </div>
     </div>
-    <!--Paralax 1-->
+<!--Paralax 1-->
     <div class="para1">
         <div style="white-space:nowrap">
             <span class="top-logo"><img src="styles/images/arcazV2W.png"></span>
         </div>
     </div>
-    <!-- About me -->
+    
+<!-- About me -->
     <div id="about" class="content">
-        <img class="prof" src="styles/images/prof.jpg"> 
+            <div class="container">
+                    <img class="image" alt="Avatar" src="styles/images/prof.jpg"> 
+                    <div class="overlay">
+                      <div class="text">ARCAZ</div>
+                    </div>
+    </div>
         <div id="Student" class="tab-content">
             <h3>Student</h3>
-            <em>B.S. Computer Sceince</em>
+            <em> B.S. Computer Sceince</em>
         </div>
 
         <div id="Photography" class="tab-content">
             <h3>Photography</h3>
-            <p>Photography </p>
+            <em> Photography </em>
         </div>
 
         <div id="Soon..." class="tab-content">
             <h3>Soon...</h3>
-            <p>Soon... </p>
+            <em>Soon... </em>
         </div>
 
         <div id="Coming..." class="tab-content">
             <h3>Coming...</h3>
-            <p>Coming... </p>
+            <em>Coming... </em>
         </div>
 
         <button class="tab-link" onclick="openAbout('Student', this, '#abe9d2')" id="defaultOpen">Student</button>
@@ -77,20 +89,22 @@
             document.getElementById("defaultOpen").click();
         </script>
     </div>
+    <!--END►About me-->
+<!--Paralax 2-->
+    <div class="para2">
 
-    <div class="para2"></div>
-    <!--Photographs-->
-    <div class="content">
+    </div>
+<!--Photographs-->
+    <div class="content" id="photo">
         --Photographs--
-    </div>
-    <div>
-        <p>Footer</p>
-    </div>
+    </div> 
+    <!--END►Photography-->
+<!--Scrolling Script-->
     <script>
-            var navbar = document.getElementById("mySidenav");
+            var navbar = document.getElementById("navbar");
             var sticky = navbar.offsetTop;
             
-            function MyFunction() {
+            function myFunction() {
               if (window.scrollY >= sticky) {
                 navbar.classList.add("sticky")
               } else {
