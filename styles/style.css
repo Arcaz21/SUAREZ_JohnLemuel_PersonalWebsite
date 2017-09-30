@@ -1,16 +1,8 @@
 body, html {
+    margin: 0;
     height: 100%;
     opacity: 1;
     transition: 1s opacity;
-}
-.prof{
-    box-shadow: 10px 10px 5px #888888;
-    position: relative;
-    margin-top: 10px;
-    max-height: 200px;
-    max-width: 200px;
-    border-radius: 50%;
-    border: 5px solid rgba(150, 150, 150, 0.50);
 }
 div{
    font-family: Lato; 
@@ -24,10 +16,11 @@ div{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 16px;
 }
 .para1 {
     background-image: url('images/para1.jpg');
-    min-height: 80%;
+    min-height: 100%;
     animation:opac .5s;
 }
 .para2 {
@@ -54,9 +47,11 @@ span a {
     animation:opac 3s;
     
 }
+/*Page Transition*/
 @keyframes opac{
     from{opacity:0} 
     to{opacity:1}}
+
 
 /*Content Styles */
 .content{
@@ -73,7 +68,6 @@ span a {
 .center {
     text-align: center;
 }
-
 /*Tabs*/
 .tab-content{
     color: #000000;
@@ -147,3 +141,47 @@ span a {
     left:50%;bottom:0;transform:translate(-50%,0%);
     -ms-transform:translate(-50%,0%)
 }
+
+.container {
+    position: relative;
+    top:50%;left:40%;
+    max-height: 200px;
+    max-width: 200px;
+  }
+  
+.image {
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    width: 95%;
+    height: auto;
+    border: 5px solid;
+  }
+  
+.overlay {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #A0C7D5;
+    border: 5px solid;
+    
+  }
+  
+.container:hover .overlay {
+    opacity: 1;
+  }
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
