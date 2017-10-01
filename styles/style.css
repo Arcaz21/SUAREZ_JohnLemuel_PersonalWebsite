@@ -14,7 +14,7 @@ div{
     background: #02abff;
     height: 50px;
 }
-.para1,para2,para3 {
+.para1, .para2, .para3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,12 +43,17 @@ div{
 
 .top-logo{
     position:absolute;
-    top:50%;left:0%;
+    top:50%;left:10%;
     transform:translate(0%,-50%);
     -ms-transform:translate(-0%,-50%);
     padding:12px 24px;
     animation:opac 3s;
     
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 /*Page Transition*/
 @keyframes opac{
