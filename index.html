@@ -113,31 +113,75 @@
     </div>
 <!--Photographs--> 
     <div class="content" id="photo">
-            <div class="row"> 
-                    <div class="column">
-                        <img src="styles/images/grid/1c.jpg">
-                        <img src="styles/images/grid/2c.jpg">
-                        <img src="styles/images/grid/3c.jpg">
-                        <img src="styles/images/grid/3c.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="styles/images/grid/2c.jpg">
-                        <img src="styles/images/grid/3c.jpg">
-                        <img src="styles/images/grid/1c.jpg">
-                    </div>  
-                    <div class="column">
-                        <img src="styles/images/grid/2c.jpg">
-                        <img src="styles/images/grid/1c.jpg">
-                        <img src="styles/images/grid/3c.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="styles/images/grid/1c.jpg">
-                        <img src="styles/images/grid/2c.jpg">
-                        <img src="styles/images/grid/3c.jpg">
-                    </div>
-                  </div>
+        <!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column">
+      <div class="content-photos">
+        <img id="myImg" src="styles/images/grid/1c.jpg" alt="Photos" style="width:100%">
+        <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+              <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById('myImg');
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                        modal.style.display = "none";
+                    }
+                    </script>      
+        <h3>Lantern Tree</h3>
+        <p>A tree in a restaurant in the middle of a salt water lake near Tagum City, Philippines.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/2c.jpg" alt="Photos" style="width:100%">
+        <h3>Beauty of Traffic</h3>
+        <p> The traffic of Diversion Road (Pan-Philippine Highway). Taken on the top of Vista View Resto, Brgy. Langb, Davao City  </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/3c.jpg" alt="Photos" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/4c.jpg" alt="Photos" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content-photos">
+    <img src="styles/images/grid/1s.jpg" alt="Photos" style="width:100%">
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  </div>
                 
-    </div> 
+            </div> 
             <!--END►Photography-->
 <!--Scrolling Script-->
     <script>
