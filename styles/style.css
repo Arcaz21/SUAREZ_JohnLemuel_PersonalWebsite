@@ -87,11 +87,7 @@ img {
 .tab-link{
     background-color: #8BB0C3;
     color: white;
-<<<<<<< HEAD
     clear: left;
-=======
-    float: left;
->>>>>>> 0c51334a84eda30e09ed210a05529904183b8df7
     border: none;
     outline: none;
     cursor: pointer;
