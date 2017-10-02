@@ -37,7 +37,11 @@
 <!--Paralax 1-->
     <div class="para1">
         <div >
+<<<<<<< HEAD
             <span class="top-logo"><a href="#about"><img href="#about" src="styles/images/arcazV2W.png"></a></span>
+=======
+            <span class="top-logo"><a href="#about"><img  href="#about" src="styles/images/arcazV2W.png"></a></span>
+>>>>>>> 0c51334a84eda30e09ed210a05529904183b8df7
             
             
         </div>
@@ -79,9 +83,21 @@
             <em>Soon... </em>
         </div>
 
+<<<<<<< HEAD
         <button class="tab-link" onclick="openAbout('Student', this, '#abe9d2')" id="defaultOpen">Student</button>
         <button class="tab-link" onclick="openAbout('Photography', this, '#23a5bb')">Photography</button>
         <button class="tab-link" onclick="openAbout('Soon...', this, '#2067a9')">Soon...</button>
+=======
+        <div id="Coming..." class="tab-content">
+            <h3>Coming...</h3>
+            <em>Coming... </em>
+        </div>
+
+        <button class="tab-link" onclick="openAbout('Student', this, '#abe9d2')" id="defaultOpen">Student</button>
+        <button class="tab-link" onclick="openAbout('Photography', this, '#23a5bb')">Photography</button>
+        <button class="tab-link" onclick="openAbout('Soon...', this, '#2067a9')">Soon...</button>
+        <button class="tab-link" onclick="openAbout('Coming...', this, '#345368')">Coming...</button>
+>>>>>>> 0c51334a84eda30e09ed210a05529904183b8df7
         <script>
             function openAbout(cityName, elmnt, color) {
                 var i, tabcontent, tablinks;
@@ -105,6 +121,7 @@
     <div class="para2">
 
     </div>
+<<<<<<< HEAD
 <!--Photographs-->
     <div class="content" id="photo">
         --Photographs--
@@ -162,6 +179,80 @@
                 
     </div> 
     <!--END►Photography-->
+=======
+<!--Photographs--> 
+    <div class="content" id="photo">
+        <!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column">
+      <div class="content-photos">
+        <img id="myImg" src="styles/images/grid/1c.jpg" alt="Photos" style="width:100%">
+        <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+              <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById('myImg');
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                        modal.style.display = "none";
+                    }
+                    </script>      
+        <h3>Lantern Tree</h3>
+        <p>A tree in a restaurant in the middle of a salt water lake near Tagum City, Philippines.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/2c.jpg" alt="Photos" style="width:100%">
+        <h3>Beauty of Traffic</h3>
+        <p> The traffic of Diversion Road (Pan-Philippine Highway). Taken on the top of Vista View Resto, Brgy. Langb, Davao City  </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/3c.jpg" alt="Photos" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/4c.jpg" alt="Photos" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content-photos">
+    <img src="styles/images/grid/1s.jpg" alt="Photos" style="width:100%">
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  </div>
+                
+            </div> 
+            <!--END►Photography-->
+>>>>>>> 0c51334a84eda30e09ed210a05529904183b8df7
 <!--Scrolling Script-->
     <script>
             var navbar = document.getElementById("navbar");
