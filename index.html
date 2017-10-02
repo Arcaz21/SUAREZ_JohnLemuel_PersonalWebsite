@@ -9,18 +9,6 @@
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
 </head>
-<!--NOTES:
-1. do NavBar
-2. Research about product tagging?
-3. do Footer
-4. Enhance NavBar
-5. Enhance about me
-6. Enhance Footer
-7. Add images
-8. Edit text (Proof Read)
-9...
--->
-
 <body onscroll="myFunction()">
 <!-- MyNavBar -->
     <div id="navbar">
@@ -34,6 +22,7 @@
                 <a href="#contact" id="contact-nav">Contact</a>
         </div>
     </div>
+    <script src="scripts/navBar.js"></script>
 <!--Paralax 1-->
     <div class="para1">
         <div >
@@ -79,102 +68,68 @@
             <em>Soon... </em>
         </div>
 
+        
+    </div>
+    <div class="tab-bottom">
         <button class="tab-link" onclick="openAbout('Student', this, '#abe9d2')" id="defaultOpen">Student</button>
         <button class="tab-link" onclick="openAbout('Photography', this, '#23a5bb')">Photography</button>
         <button class="tab-link" onclick="openAbout('Soon...', this, '#2067a9')">Soon...</button>
-        <script>
-            function openAbout(cityName, elmnt, color) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tab-content");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tab-link");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].style.backgroundColor = "";
-                }
-                document.getElementById(cityName).style.display = "block";
-                elmnt.style.backgroundColor = color;
-
-            }
-            document.getElementById("defaultOpen").click();
-        </script>
+        <script src="scripts/tabs.js"></script>
     </div>
     <!--END►About me-->
 <!--Paralax 2-->
-    <div class="para2">
+    <div class="para2"></div>
 
-    </div>
 <!--Photographs-->
     <div class="content" id="photo">
-        --Photographs--
-         <!-- Portfolio Gallery Grid -->
-<div class="row">
-        <div class="column">
-          <div class="content-photos">
-            <img id="myImg" src="styles/images/grid/1c.jpg" alt="Photos" style="width:100%">
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-                <script src="scripts/modal.js"></script>   
-            <h3>Lantern Tree</h3>
-            <p>A tree in a restaurant in the middle of a salt water lake near Tagum City, Philippines.
-            </p>
-          </div>
+        <div class="row">
+            <div class="column">
+            <div class="content-photos">
+                <img id="myImg" src="styles/images/grid/1c.jpg" alt="Photos" style="width:100%">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <script src="scripts/modal.js"></script>   
+                <h3>Lantern Tree</h3>
+                <p>A tree in a restaurant in the middle of a salt water lake near Tagum City, Philippines.
+                </p>
+            </div>
+            </div>
+            <div class="column">
+            <div class="content-photos">
+                <img src="styles/images/grid/2c.jpg" alt="Photos" style="width:100%">
+                <h3>My Work</h3>
+                <p> WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS</p>
+            </div>
+            </div>
+            <div class="column">
+            <div class="content-photos">
+                <img src="styles/images/grid/3c.jpg" alt="Photos" style="width:100%">
+                <h3>My Work</h3>
+                <p>WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS</p>
+            </div>
+            </div>
+            <div class="column">
+            <div class="content-photos">
+                <img src="styles/images/grid/4c.jpg" alt="Photos" style="width:100%">
+                <h3>My Work</h3>
+                <p>WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS</p>
+            </div>
+            </div>
         </div>
-        <div class="column">
-          <div class="content-photos">
-          <img src="styles/images/grid/2c.jpg" alt="Photos" style="width:100%">
-            <h3>My Work</h3>
-            <p> WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content-photos">
-          <img src="styles/images/grid/3c.jpg" alt="Photos" style="width:100%">
-            <h3>My Work</h3>
+        
+        <div class="content-photos">
+            <img src="styles/images/grid/1s.jpg" alt="Photos" style="width:100%">
+            <h3>Some Other Work</h3>
             <p>WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS</p>
-          </div>
         </div>
-        <div class="column">
-          <div class="content-photos">
-          <img src="styles/images/grid/4c.jpg" alt="Photos" style="width:100%">
-            <h3>My Work</h3>
-            <p>WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS</p>
-          </div>
-        </div>
-      <!-- END GRID -->
-      </div>
-      
-      <div class="content-photos">
-        <img src="styles/images/grid/1s.jpg" alt="Photos" style="width:100%">
-        <h3>Some Other Work</h3>
-        <p>WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS WORD WORDS</p>
-      </div>
-                    
-</div> 
-<!--END►Photography-->
-<!--Modal Script-->
-<!--MODAL END-->
-
-                
-    </div> 
-    <!--END►Photography-->
+                        
+    </div>
+ <!--END►Photography-->
 <!--Scrolling Script-->
-    <script>
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.scrollY >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-    </script>
+
 </body>
 
 </html>

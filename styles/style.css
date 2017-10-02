@@ -50,11 +50,6 @@ div{
     animation:opac 3s;
     
 }
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
 /*Page Transition*/
 @keyframes opac{
     from{opacity:0} 
@@ -98,6 +93,12 @@ img {
 .tab-link:hover {
     background-color: #777;
 }
+.tab-bottom{
+    background-color: #1F1F1F;
+    max-width:100%;
+    margin:auto;
+    text-align: center;
+}
 
 /* Positioning */
 .topleft{
@@ -124,8 +125,6 @@ img {
 .middle{
     position:absolute;
     top:50%;left:50%;
-    transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%)
 }
 .left{
     position:absolute;
@@ -153,9 +152,12 @@ img {
 
 .container {
     position: relative;
-    top:50%;left:40%;
-    max-height: 200px;
+    top:50%; left:50%;
+    transform:translate(-50%,-60%);
+    -ms-transform:translate(-50%,-60%);
     max-width: 200px;
+    max-height: 200px;
+
   }
   
 .image {
