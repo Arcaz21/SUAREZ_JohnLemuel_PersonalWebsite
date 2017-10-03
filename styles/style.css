@@ -33,7 +33,8 @@ div {
 
 .para2,
 
-.para3 {
+.para3,
+.para4 {
 
 	background-attachment: fixed;
 
@@ -68,6 +69,14 @@ div {
 .para3 {
     
         background-image: url('images/para3.jpg');
+    
+        min-height: 100%;
+    
+    }
+
+.para4 {
+    
+        background-image: url('images/para4.jpg');
     
         min-height: 100%;
     

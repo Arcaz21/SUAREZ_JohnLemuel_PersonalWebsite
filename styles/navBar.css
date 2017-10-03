@@ -1,5 +1,6 @@
 #navbar1, #navbar2, #navbar3 {
   overflow: hidden;
+  box-sizing: initial !important;
 }
 #navbar a {
   float: left;
@@ -34,14 +35,18 @@
 #about-nav {
   top: 20px;
   background-color: #4CAF50;
+  box-sizing: initial !important;
+  
 }
 
 #photo-nav {
   top: 80px;
   background-color: #2196F3;
+  box-sizing: initial !important;
 }
 
 #contact-nav {
   top: 140px;
-  background-color: #555
+  background-color: #555;
+  box-sizing: initial !important;
 }
