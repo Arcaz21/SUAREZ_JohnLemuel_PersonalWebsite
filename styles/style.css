@@ -1,434 +1,487 @@
 
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-
-body,
-
 html {
-
-	margin: 0;
-
-	height: 100%;
-
-	opacity: 1;
-
-	transition: 1s opacity;
-
-	background-color: #bfbfbf;
-
-}
-
-div {
-
-	font-family: Lato;
-
-}
-
-#header {
-
-	background: #02abff;
-
-	height: 50px;
-
-}
-
-.para1,
-.para2,
-.para3,
-.para4 {
-
-	background-attachment: fixed;
-
-	background-position: center;
-
-	background-repeat: no-repeat;
-
-	background-size: cover;
-
-	padding: 16px;
-
-}
-
-.para1 {
-
-	background-image: url('images/para1.jpg');
-
-	min-height: 100%;
-
-	animation: opac .5s;
-
-}
-
-.para2 {
-
-	background-image: url('images/para2.jpg');
-
-	min-height: 100%;
-
-}
-
-.para3 {
+    
+        box-sizing: border-box
+    
+    }
+    
+    *,
+    
+    *:before,
+    
+    *:after {
+    
+        box-sizing: inherit
+    
+    }
+    
+    body,
+    
+    html {
+    
+        margin: 0;
+    
+        height: 100%;
+    
+        opacity: 1;
+    
+        transition: 1s opacity;
+    
+        background-color: #bfbfbf;
+    
+    }
+    
+    div {
+    
+        font-family: Lato;
+    
+    }
+    
+    #header {
+    
+        background: #02abff;
+    
+        height: 50px;
+    
+    }
+    
+    .para1,
+    
+    .para2,
+    
+    .para3,
+    
+    .para4 {
+    
+        background-attachment: fixed;
+    
+        background-position: center;
+    
+        background-repeat: no-repeat;
+    
+        background-size: cover;
+    
+        padding: 16px;
+    
+    }
+    
+    .para1 {
+    
+        background-image: url('images/para1.jpg');
+    
+        min-height: 100%;
+    
+        animation: opac .5s;
+    
+    }
+    
+    .para2 {
+    
+        background-image: url('images/para2.jpg');
+    
+        min-height: 100%;
+    
+    }
+    
+    .para3 {
+    
         background-image: url('images/para3.jpg');
     
         min-height: 100%;
-
     
     }
-
-.para4 {
+    
+    .para4 {
     
         background-image: url('images/para4.jpg');
     
         min-height: 100%;
     
     }
-
-.top-logo {
-
-	position: absolute;
-
-	top: 50%;
-
-	left: 10%;
-
-	transform: translate(0%, -50%);
-
-	-ms-transform: translate(-0%, -50%);
-
-	padding: 12px 24px;
-
-	animation: opac 3s;
-
-}
-
-
-/*Page Transition*/
-
-@keyframes opac {
-
-	from {
-
-		opacity: 0
-
-	}
-
-	to {
-
-		opacity: 1
-
-	}
-
-}
-
-/*Content Styles */
-
-.content {
-
-	background-color: #bfbfbf;
-
-	padding: 16px;
-
-	max-width: 980px;
-
-	margin: auto;
-
-    text-align: center;
     
-
-}
-
-.padding-content {
-
-	padding-top: 64px;
-
-	padding-bottom: 64px;
-
-}
-
-.center {
-
-	text-align: center;
-
-}
-
-/*Tabs*/
-
-.tab-content {
-
-	color: #000000;
-
-	display: none;
-
-	padding: 50px;
-
-	text-align: center;
-
-}
-
-.tab-video {
+    .top-logo {
+    
+        position: absolute;
+    
+        top: 50%;
+    
+        left: 10%;
+    
+        transform: translate(0%, -50%);
+    
+        -ms-transform: translate(-0%, -50%);
+    
+        padding: 12px 24px;
+    
+        animation: opac 3s;
+    
+    }
+    
+    /*Page Transition*/
+    
+    @keyframes opac {
+    
+        from {
+    
+            opacity: 0
+    
+        }
+    
+        to {
+    
+            opacity: 1
+    
+        }
+    
+    }
+    
+    /*Content Styles */
+    
+    .content {
+    
+        background-color: #bfbfbf;
+    
+        padding: 16px;
+    
+        max-width: 980px;
+    
+        margin: auto;
+    
+        text-align: center;
+    
+    }
+    
+    .padding-content {
+    
+        padding-top: 64px;
+    
+        padding-bottom: 64px;
+    
+    }
+    
+    .center {
+    
+        text-align: center;
+    
+    }
+    
+    /*Tabs*/
+    
+    .tab-content {
     
         color: #000000;
     
         display: none;
-
+    
+        padding: 50px;
+    
+        text-align: center;
+    
+    }
+    
+    .tab-video {
+    
+        color: #000000;
+    
+        display: none;
+    
         height: auto;
+    
         width: 100%;
     
         text-align: center;
     
     }
-
-.tab-link {
-
-	background-color: #8BB0C3;
-
-	color: white;
-
-	float: left;
-
-	border: none;
-
-	outline: none;
-
-	cursor: pointer;
-
-	padding: 14px 16px;
-
-	font-size: 17px;
-
-    width: 25%;
-
-}
-
-.tab-link:hover {
-
-	background-color: #777;
-
-}
-
-.tab-bottom {
-
-	background-color: #1F1F1F;
-
-	max-width: 100%;
-
-	margin: auto;
-
-	text-align: center;
-
-}
-
-/* Positioning */
-
-.topleft {
-
-	position: absolute;
-
-	left: 0;
-
-	top: 0
-
-}
-
-.topright {
-
-	position: absolute;
-
-	right: 0;
-
-	top: 0;
-
-	background-color: #02abff
-
-}
-
-.bottomleft {
-
-	position: absolute;
-
-	left: 0;
-
-	bottom: 0
-
-}
-
-.bottomright {
-
-	position: absolute;
-
-	right: 0;
-
-	bottom: 0
-
-}
-
-.middle {
-
-	position: absolute;
-
-	top: 50%;
-
-    left: 50%;
     
-    transform: translate(-50%,-50%);
-
-    -ms-transform: translate(-50%,-50%);
-
-    overflow: hidden;
-
-}
-
-.left {
-
-	position: absolute;
-
-	top: 50%;
-
-	left: 0%;
-
-	transform: translate(0%, -50%);
-
-	-ms-transform: translate(-0%, -50%)
-
-}
-
-.right {
-
-	position: absolute;
-
-	top: 50%;
-
-	right: 0%;
-
-	transform: translate(0%, -50%);
-
-	-ms-transform: translate(0%, -50%)
-
-}
-
-.topmiddle {
-
-	position: absolute;
-
-	left: 50%;
-
-	top: 0;
-
-	transform: translate(-50%, 0%);
-
-	-ms-transform: translate(-50%, 0%)
-
-}
-
-.bottommiddle {
-
-	position: absolute;
-
-	left: 50%;
-
-	bottom: 0;
-
-	transform: translate(-50%, 0%);
-
-	-ms-transform: translate(-50%, 0%)
-
-}
-
-.container {
-
-	position: relative;
-
-	top: 50%;
-
-	left: 50%;
-
-	transform: translate(-50%, -60%);
-
-	-ms-transform: translate(-50%, -60%);
-
-	max-width: 200px;
-
-	max-height: 200px;
-
-}
-
-.image {
-
-	border-radius: 50%;
-
-	position: relative;
-
-	width: 95%;
-
-	height: auto;
-
-    border: 5px solid;
-
+    .tab-link {
     
-
-}
-
-.overlay {
-
-	border-radius: 50%;
-
-	position: absolute;
-
-	top: 0;
-
-	bottom: 0;
-
-	left: 0;
-
-	right: 0;
-
-	opacity: 0;
-
-	transition: .5s ease;
-
-	background-color: #A0C7D5;
-
-	border: 5px solid;
-
-}
-
-.container:hover .overlay {
-
-	opacity: 1;
-
-}
-
-.text {
-
-	color: white;
-
-	font-size: 20px;
-
-	position: absolute;
-
-	top: 50%;
-
-	left: 50%;
-
-	transform: translate(-50%, -50%);
-
-	-ms-transform: translate(-50%, -50%);
-
-}
-/* Skill Bar */
-.bar {
-    width: 100%;
-    background-color: #ddd;
-  }
-  
-  .skills {
-    text-align: right;
-    padding-right: 20px;
-    line-height: 40px;
-    color: white;
-  }
-  
-  .photography {width: 80%; background-color: #43646b;}
-  .student {width: 75%; background-color: #43646b;}
-  .gaming {width: 50%; background-color: #43646b;}
-  .mine {width: 45%; background-color: #43646b;}
-
+        background-color: #8BB0C3;
+    
+        color: white;
+    
+        float: left;
+    
+        border: none;
+    
+        outline: none;
+    
+        cursor: pointer;
+    
+        padding: 14px 16px;
+    
+        font-size: 17px;
+    
+        width: 25%;
+    
+    }
+    
+    .tab-link:hover {
+    
+        background-color: #777;
+    
+    }
+    
+    .tab-bottom {
+    
+        background-color: #1F1F1F;
+    
+        max-width: 100%;
+    
+        margin: auto;
+    
+        text-align: center;
+    
+    }
+    
+    /* Positioning */
+    
+    .topleft {
+    
+        position: absolute;
+    
+        left: 0;
+    
+        top: 0
+    
+    }
+    
+    .topright {
+    
+        position: absolute;
+    
+        right: 0;
+    
+        top: 0;
+    
+        background-color: #02abff
+    
+    }
+    
+    .bottomleft {
+    
+        position: absolute;
+    
+        left: 0;
+    
+        bottom: 0
+    
+    }
+    
+    .bottomright {
+    
+        position: absolute;
+    
+        right: 0;
+    
+        bottom: 0
+    
+    }
+    
+    .middle {
+    
+        position: absolute;
+    
+        top: 50%;
+    
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    
+        -ms-transform: translate(-50%, -50%);
+    
+        overflow: hidden;
+    
+    }
+    
+    .left {
+    
+        position: absolute;
+    
+        top: 50%;
+    
+        left: 0%;
+    
+        transform: translate(0%, -50%);
+    
+        -ms-transform: translate(-0%, -50%)
+    
+    }
+    
+    .right {
+    
+        position: absolute;
+    
+        top: 50%;
+    
+        right: 0%;
+    
+        transform: translate(0%, -50%);
+    
+        -ms-transform: translate(0%, -50%)
+    
+    }
+    
+    .topmiddle {
+    
+        position: absolute;
+    
+        left: 50%;
+    
+        top: 0;
+    
+        transform: translate(-50%, 0%);
+    
+        -ms-transform: translate(-50%, 0%)
+    
+    }
+    
+    .bottommiddle {
+    
+        position: absolute;
+    
+        left: 50%;
+    
+        bottom: 0;
+    
+        transform: translate(-50%, 0%);
+    
+        -ms-transform: translate(-50%, 0%)
+    
+    }
+    
+    .container {
+    
+        position: relative;
+    
+        top: 50%;
+    
+        left: 50%;
+    
+        transform: translate(-50%, -60%);
+    
+        -ms-transform: translate(-50%, -60%);
+    
+        max-width: 200px;
+    
+        max-height: 200px;
+    
+    }
+    
+    .image {
+    
+        border-radius: 50%;
+    
+        position: relative;
+    
+        width: 95%;
+    
+        height: auto;
+    
+        border: 5px solid;
+    
+    }
+    
+    .overlay {
+    
+        border-radius: 50%;
+    
+        position: absolute;
+    
+        top: 0;
+    
+        bottom: 0;
+    
+        left: 0;
+    
+        right: 0;
+    
+        opacity: 0;
+    
+        transition: .5s ease;
+    
+        background-color: #A0C7D5;
+    
+        border: 5px solid;
+    
+    }
+    
+    .container:hover .overlay {
+    
+        opacity: 1;
+    
+    }
+    
+    .text {
+    
+        color: white;
+    
+        font-size: 20px;
+    
+        position: absolute;
+    
+        top: 50%;
+    
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    
+        -ms-transform: translate(-50%, -50%);
+    
+    }
+    
+    /* Skill Bar */
+    
+    .bar {
+    
+        width: 100%;
+    
+        background-color: #ddd;
+    
+    }
+    
+    .skills {
+    
+        text-align: right;
+    
+        padding-right: 20px;
+    
+        line-height: 40px;
+    
+        color: white;
+    
+    }
+    
+    .photography {
+    
+        width: 80%;
+    
+        background-color: #43646b;
+    
+    }
+    
+    .student {
+    
+        width: 75%;
+    
+        background-color: #43646b;
+    
+    }
+    
+    .gaming {
+    
+        width: 50%;
+    
+        background-color: #43646b;
+    
+    }
+    
+    .mine {
+    
+        width: 45%;
+    
+        background-color: #43646b;
+    
+    }
+     #contact ul{
+        list-style-type: none;
+    }

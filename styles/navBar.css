@@ -1,56 +1,50 @@
-#navbar{
-  z-index: 1;
+#navbar {
+	z-index: 1;
 }
-#navbar1, #navbar2, #navbar3 {
-  overflow: hidden;
-  box-sizing: initial !important;
+#navbar1,
+#navbar2,
+#navbar3 {
+	overflow: hidden;
+	box-sizing: initial !important;
 }
 #navbar a {
-  float: left;
-  display: block;
-  left: -80px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.00);
-  border-radius: 0 5px 5px 0; 
-  position: absolute;
-  
+	float: left;
+	display: block;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.00);
+	border-radius: 0 5px 5px 0;
+	position: absolute;
 }
-
-
 #navbar a:hover {
-  left:0;
-  background-color: #ddd;
-  color: black;
+	left: 0;
+	background-color: #ddd;
+	color: black;
 }
-
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
+	position: fixed;
+	top: 0;
+	width: 100%
 }
-
 .sticky + .content {
-  padding-top: 60px;
+	padding-top: 60px;
 }
 #about-nav {
-  top: 20px;
-  background-color: #4CAF50;
-  box-sizing: initial !important;
-  
+	top: 20px;
+	background-color: #4CAF50;
+	box-sizing: initial !important;
 }
-
 #photo-nav {
-  top: 80px;
-  background-color: #2196F3;
-  box-sizing: initial !important;
+	top: 80px;
+	background-color: #2196F3;
+	box-sizing: initial !important;
 }
-
 #contact-nav {
-  top: 140px;
-  background-color: #555;
-  box-sizing: initial !important;
+	top: 140px;
+	background-color: #555;
+	box-sizing: initial !important;
 }
