@@ -1,4 +1,6 @@
 
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
 body,
 
 html {
@@ -30,9 +32,7 @@ div {
 }
 
 .para1,
-
 .para2,
-
 .para3,
 .para4 {
 
@@ -67,10 +67,10 @@ div {
 }
 
 .para3 {
-    
         background-image: url('images/para3.jpg');
     
         min-height: 100%;
+
     
     }
 
@@ -81,15 +81,6 @@ div {
         min-height: 100%;
     
     }
-
-/* span a {
-    background-color: grey;
-    color: #fff;
-    font-size: 6vw;
-    display: inline-block;
-    margin:0 auto;
-    padding: 50px 70px;
-} */
 
 .top-logo {
 
@@ -108,6 +99,7 @@ div {
 	animation: opac 3s;
 
 }
+
 
 /*Page Transition*/
 
@@ -172,6 +164,19 @@ div {
 
 }
 
+.tab-video {
+    
+        color: #000000;
+    
+        display: none;
+
+        height: auto;
+        width: 100%;
+    
+        text-align: center;
+    
+    }
+
 .tab-link {
 
 	background-color: #8BB0C3;
@@ -190,7 +195,7 @@ div {
 
 	font-size: 17px;
 
-	width: 25%;
+    width: 25%;
 
 }
 
@@ -262,7 +267,13 @@ div {
 
 	top: 50%;
 
-	left: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+
+    -ms-transform: translate(-50%,-50%);
+
+    overflow: hidden;
 
 }
 
